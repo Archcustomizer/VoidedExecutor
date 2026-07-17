@@ -1758,7 +1758,7 @@ function Disassembler.FancyDisassemble(Bytecode, ShoveIntoOneString, IsFromRoblo
 	local EndBenchmark = os_clock() - StartBenchmark
 
 	if not Result[1] then
-		PrintOrConcat("Disassembly failed: " .. tostring(Result[2]))
+		PrintOrConcat("--Disassembly failed:\n" .. tostring(Result[2]))
 
 		if ShoveIntoOneString then
 			return table_concat(OutputParts, "\n")
@@ -1793,7 +1793,7 @@ function Disassembler.FancyDisassemble(Bytecode, ShoveIntoOneString, IsFromRoblo
 	end
 
 	if not DisassembledProtos then
-		PrintOrConcat("Disassembly failed.")
+		PrintOrConcat("--Disassembly failed.")
 		
 		if ShoveIntoOneString then
 			return table_concat(OutputParts, "\n")
