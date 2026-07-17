@@ -1742,7 +1742,6 @@ end
 
 function Disassembler.FancyDisassemble(Bytecode, ShoveIntoOneString, IsFromRoblox)
 	ShoveIntoOneString = ShoveIntoOneString or true
-  IsFromRoblox = IsFromRoblox or true
 	local OutputParts = {}
 
 	local function PrintOrConcat(Text)
