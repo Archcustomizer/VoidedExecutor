@@ -1,4 +1,6 @@
 --!nocheck
+--!optimize 2
+--!native
 --[[
 	vLuau - Similar to vLua but has Fully Luau Support (by gh:kosuke14)
 	vLuau is a Luau virtual machine written in Luau.
@@ -15,8 +17,7 @@
 		gh:TheGreatSageEqualToHeaven/Fiu (  Luau Bytecode Interpreter written in Luau  )
 --]]
 
---!optimize 2
---!native
+
 -- // Environment changes in the VM are not supposed to alter the behaviour of the VM so we localise globals beforehand
 local type = type
 local pcall = pcall
@@ -1417,7 +1418,6 @@ local Loader = {
 	luau_getcoverage = luau_getcoverage,
 }
 
---!optimize 2
 --// LuauCeption - Compiler Variant
 --// Built from Luau 0.700 (3e1c94ec2c1a077497b7ac21f580745c7aeeefae)
 
